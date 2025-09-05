@@ -6,8 +6,7 @@ app = FastAPI()
 
 # Simulated hospital A data
 df = pd.DataFrame({
-    #"age": np.random.randint(20, 80, size=200),
-    "age": [100] * 200,
+    "age": np.random.randint(20, 80, size=200),
     "condition": np.random.choice(["diabetes", "cancer", "asthma"], 200)
 })
 
@@ -15,3 +14,4 @@ df = pd.DataFrame({
 def query_average_age(condition: str = Query(...)):
     result = df[df["condition"] == condition]["age"].mean()
     return {"hospital": "A", "avg_age": result}
+
