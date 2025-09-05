@@ -89,7 +89,7 @@ The contract therefore serves as a **cryptographic receipt**: holding HAPD or HB
 | ---------------- | ----------------------------------------------------------------- | ---------------------------------------------------------- |
 | **Tokenisation** | Two ERC‑20 byte‑codes + ABIs; contract addrs in `deploy.json`     | `deploy.py` console logs + JSON metadata                   |
 | **Ownership**    | 1 000 000 HAPD minted to Hospital A; 1 000 000 HBTD to Hospital B | `check_balances.py` shows initial split                    |
-|                     but transferred to requestor wallet (illustrating token buying)  |                                                            |
+|                  | but transferred to requestor wallet (illustrating token buying)   |                                                            |
 | **Value unlock** | n/a                                                               | `aggregate_query.py diabetes`                              |
 
 ### Seeing gas fees
