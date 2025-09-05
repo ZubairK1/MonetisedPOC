@@ -14,17 +14,6 @@
 *(**`contracts/Token.sol`** ****is committed**** so anyone can verify or recompile the exact byte‑code.)*
 
 ```
-repo/
-├─ contracts/Token.sol          # minimal ERC‑20 (represents a hospital dataset)
-├─ data/                        # hospital CSVs (A & B)
-├─ deploy.py                    # compile + deploy tokens (auto wallets / auto funding)
-├─ swap.py                      # 50 HAPD ⇄ 75 HBTD (fee‑aware)
-├─ analytics.py                 # show merged KPI (length of stay vs success rate)
-├─ check_balances.py            # print token + ETH balances (optional)
-├─ main.py                      # simple CLI wrapper (deploy → swap → analytics)
-├─ requirements.txt             # pip deps
-└─ README.md                    # this file
-
 MonetisedPOC/
 ├── aggregate_query.py  #used to communciate with hospital APIs to show aggregate outputs of average age
 ├── aggregate_query_he.py  #same as aggregate_query but uses HE
