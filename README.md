@@ -46,10 +46,10 @@ pip install -r requirements.txt
 
 # 1. launch a dev chain  (choose ↓)
 #    —— FREE‑GAS demo ——         # no ETH needed at all
-anvil --base-fee 0 --port 8545 &
+anvil --base-fee 0 --port 8545 
 
 #    —— GAS‑FEE simulation ——    # 1 ETH auto‑funded to each wallet
-anvil --base-fee 10 --port 8545 &
+anvil --base-fee 10 --port 8545 
 
 # 2. setup the APIs in separate terminals
 python -m uvicorn hospital_A.app:app --reload --port 8001 #run this from the directory/MonetisedPOC
