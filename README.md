@@ -54,6 +54,8 @@ anvil --base-fee 10 --port 8545
 # 2. setup the APIs in separate terminals
 python -m uvicorn hospital_A.app:app --reload --port 8001 #run this from the directory/MonetisedPOC
 python -m uvicorn hospital_B.app:app --reload --port 8002
+#for using HE service, run the he_service file instead of app and in CLI use the option 'WITH HE.'
+#HE option will not work unless HE APIs are running
 
 #3. run main
 python3 main.py #press 1, then 3. 5 can be used to check balances
@@ -65,6 +67,7 @@ Or run the scripts yourself:
 ```bash
 python deploy.py      # compile & deploy HAPD/HBTD (wallets auto‑generated)
 python aggregate_query.py [condition]  # i.e. python aggregate_query.py diabetes
+
 python check_balances.py   # (optional) see token + ETH balances
 ```
 
