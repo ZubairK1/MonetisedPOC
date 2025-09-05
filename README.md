@@ -1,7 +1,7 @@
 ﻿
 # Hospital‑to‑Hospital Data Exchange POC
 
-**End‑to‑end demo:** two hospitals tokenise their private datasets as ERC‑20 tokens, swap access rights, and unlock analytics—all on an Ethereum chain you can run locally or point at a public testnet.
+**End‑to‑end demo:** two hospitals tokenise their private datasets as ERC‑20 tokens, allowing queriers to accesss aggregated insights using tokenised accesss on an Ethereum chain that can be run locally or point at a public testnet.
 
 - **Portable** – one codebase works in free‑gas mode *and* gas‑fee mode.
 - **Hands‑free wallets** – if you don’t set any private keys the scripts create, fund, and persist two brand‑new wallets for you.
