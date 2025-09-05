@@ -24,6 +24,28 @@ repo/
 ├─ main.py                      # simple CLI wrapper (deploy → swap → analytics)
 ├─ requirements.txt             # pip deps
 └─ README.md                    # this file
+
+MonetisedPOC/
+├── aggregate_query.py  #used to communciate with hospital APIs to show aggregate outputs of average age
+├── aggregate_query_he.py  #same as aggregate_query but uses HE
+├── check_balances.py   #show token balaces
+├── contracts
+│   └── Token.sol  # minimal ERC‑20 (represents a hospital dataset)
+├── deploy.py
+├── hospital_A  
+│   ├── app.py  #api endpoint and data generation
+│   ├── he_service.py  #endpoint and data generation + HE
+│   ├── paillier.py   #used for HE
+│   └── requirements.txt
+├── hospital_B
+│   ├── app.py
+│   ├── he_service.py
+│   ├── paillier.py
+│   └── requirements.txt
+├── main.py  #provides CLI interface
+├── paillier.py  #used for HE 
+├── requirements.txt
+└── swap.py
 ```
 ---
 
