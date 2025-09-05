@@ -1,5 +1,5 @@
 ﻿
-# Hospital‑to‑Hospital Data Exchange POC
+# Federated, monetised data exchange POC
 
 **End‑to‑end demo:** two hospitals tokenise their private datasets as ERC‑20 tokens, allowing queriers to accesss aggregated insights using tokenised accesss on an Ethereum chain that can be run locally or point at a public testnet.
 
