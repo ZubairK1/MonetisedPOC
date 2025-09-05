@@ -91,7 +91,7 @@ The contract therefore serves as a **cryptographic receipt**: holding HAPD or HB
 | **Ownership**    | 1 000 000 HAPD minted to Hospital A; 1 000 000 HBTD to Hospital B but transferred to requestor wallet (illustrating token buying)| `check_balances.py` shows initial split                    |
 | **Value unlock** | n/a                                                               | `aggregate_query.py diabetes`                              |
 
-
+Code and README developed in collaboration with Enzo Fengolio, license is included.
 
 MIT License – fork, adapt, improve.
 
