@@ -1,0 +1,10 @@
+web3==6.*
+eth-account==0.10.*
+py-solc-x==1.*
+pandas==2.*
+rich==13.*
+httpx
+fastapi
+uvicorn
+pandas
+numpy
