@@ -30,7 +30,7 @@ repo/
 ## ⚡ Quick start
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
 # 1. launch a dev chain  (choose ↓)
@@ -40,16 +40,20 @@ anvil --base-fee 0 --port 8545 &
 #    —— GAS‑FEE simulation ——    # 1 ETH auto‑funded to each wallet
 anvil --base-fee 10 --port 8545 &
 
-# 2. run the guided menu
-python main.py     # press 1 → 2 → 3
+# 2. setup the APIs in separate terminals
+python -m uvicorn hospital_A.app:app --reload --port 8001 #run this from the directory/MonetisedPOC
+python -m uvicorn hospital_B.app:app --reload --port 8002
+
+#3. run main
+python3 main.py #press 1, then 3. 5 can be used to check balances
+
 ```
 
 Or run the scripts yourself:
 
 ```bash
 python deploy.py      # compile & deploy HAPD/HBTD (wallets auto‑generated)
-python swap.py        # 50 HAPD → B   |   75 HBTD → A
-python analytics.py   # merged KPI printed
+python aggregate_query.py [condition]  # i.e. python aggregate_query.py diabetes
 python check_balances.py   # (optional) see token + ETH balances
 ```
 
